@@ -70,7 +70,7 @@ namespace Bank_System
         }
     }
 
-    public class AccountsTable
+    public class AccountsDB
     {
         public List<Account> _accounts = new List<Account>();
         List<Account> ExtractedAccounts = new List<Account>();
@@ -84,8 +84,7 @@ namespace Bank_System
             StreamReader sr = new StreamReader(filename);
             while(sr.Peek() > 0)
             {
-                string line = sr.ReadLine();
-                string[] parts = line.Split(";");
+                string[] parts = sr.ReadLine().Split(";");
                 int ID = int.Parse(parts[0]);
                 string Name = parts[1];
                 string Email = parts[2];
@@ -138,6 +137,7 @@ namespace Bank_System
         {
             _accounts.Add(account);
         }
+
         public Account FindAccount(int id)
         {
             foreach(Account account in _accounts)
@@ -146,6 +146,7 @@ namespace Bank_System
             }
             return null;
         }
+
         public void RemoveAccount(Account account)
         {
             _accounts.Remove(account);
@@ -156,16 +157,16 @@ namespace Bank_System
             return true;
         }
         public void ModifyAccount(Account acc, string? Name, string? Email, string? password)
-        {
+        {   
             if(Name != null)
                 acc.Name = Name;
             if(Email != null) 
                 acc.Email = Email;
             if(password != null) 
                 acc.Password = password;
+            return;
         }
-    }
 
-    
+    }
 
 }
