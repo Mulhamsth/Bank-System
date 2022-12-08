@@ -1,0 +1,15 @@
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\bin\Debug\net6.0\Bank_System.exe
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\bin\Debug\net6.0\Bank_System.deps.json
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\bin\Debug\net6.0\Bank_System.runtimeconfig.json
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\bin\Debug\net6.0\Bank_System.dll
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\bin\Debug\net6.0\Bank_System.pdb
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\obj\Debug\net6.0\Bank_System.csproj.AssemblyReference.cache
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\obj\Debug\net6.0\Bank_System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\obj\Debug\net6.0\Bank_System.AssemblyInfoInputs.cache
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\obj\Debug\net6.0\Bank_System.AssemblyInfo.cs
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\obj\Debug\net6.0\Bank_System.csproj.CoreCompileInputs.cache
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\obj\Debug\net6.0\Bank_System.dll
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\obj\Debug\net6.0\refint\Bank_System.dll
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\obj\Debug\net6.0\Bank_System.pdb
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\obj\Debug\net6.0\Bank_System.genruntimeconfig.cache
+C:\Users\mulha\github\Bank-System\Bank_System\Bank_System\obj\Debug\net6.0\ref\Bank_System.dll
