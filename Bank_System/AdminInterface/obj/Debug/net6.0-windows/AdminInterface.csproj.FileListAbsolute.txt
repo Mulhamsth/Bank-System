@@ -1,0 +1,17 @@
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\bin\Debug\net6.0-windows\AdminInterface.exe
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\bin\Debug\net6.0-windows\AdminInterface.deps.json
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\bin\Debug\net6.0-windows\AdminInterface.runtimeconfig.json
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\bin\Debug\net6.0-windows\AdminInterface.dll
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\bin\Debug\net6.0-windows\AdminInterface.pdb
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\AdminInterface.csproj.AssemblyReference.cache
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\AdminInterface.Form1.resources
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\AdminInterface.csproj.GenerateResource.cache
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\AdminInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\AdminInterface.AssemblyInfoInputs.cache
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\AdminInterface.AssemblyInfo.cs
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\AdminInterface.csproj.CoreCompileInputs.cache
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\AdminInterface.dll
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\refint\AdminInterface.dll
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\AdminInterface.pdb
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\AdminInterface.genruntimeconfig.cache
+C:\Users\mulha\github\Bank-System\Bank_System\AdminInterface\obj\Debug\net6.0-windows\ref\AdminInterface.dll
