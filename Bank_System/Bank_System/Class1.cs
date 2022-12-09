@@ -51,9 +51,8 @@ namespace Bank_System
                     throw new Exception("Invalid Password");
             }
         }
-        public Account(int ID, string Name, string email, string password, int balance = 0)
+        public Account(string Name, string email, string password, int balance = 0)
         {
-            this.ID = ID;
             this.Name = Name;
             this.Balance = balance;
             this.Email = email;
@@ -90,7 +89,7 @@ namespace Bank_System
                 string Email = parts[2];
                 string Password = parts[3];
                 int Balance = int.Parse(parts[4]);
-                Account account = new Account(ID, Name, Email, Password, Balance);
+                Account account = new Account(Name, Email, Password, Balance) { ID = ID};
                 ExtractedAccounts.Add(account);
             }
             sr.Close();
@@ -135,18 +134,26 @@ namespace Bank_System
         }
         public void AddAccount(Account account)
         {
+            account.ID = Count + 1;
             _accounts.Add(account);
         }
 
-        public Account FindAccount(int id)
+        public Account FindAccount(string Email)
         {
             foreach(Account account in _accounts)
             {
-                if(account.ID == id) return account;
+                if(account.Email == Email) return account;
             }
             return null;
         }
-
+        public Account FindAccount(int id)
+        {
+            foreach (Account account in _accounts)
+            {
+                if (account.ID == id) return account;
+            }
+            return null;
+        }
         public void RemoveAccount(Account account)
         {
             _accounts.Remove(account);
@@ -166,7 +173,32 @@ namespace Bank_System
                 acc.Password = password;
             return;
         }
+    }
 
+    public static class Login
+    {
+        public static bool IsValid(AccountsDB db, string Email, string Password) 
+        {
+            Account acc = db.FindAccount(Email);
+            if ( acc != null)
+                if(acc.Password == Password)
+                    return true;    
+            return false;
+        }
+    }
+
+    public static class Register
+    {
+        public static void NewAccount(AccountsDB DB, string Name, string Email, string Password)
+        {
+            if (new Regex(@"^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$").Match(Email).Success)
+                if (new Regex(@"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$").Match(Password).Success)
+                {
+                    Account acc = new Account(Name, Email, Password);
+                    DB.AddAccount(acc);
+                }
+            return;
+        }
     }
 
 }

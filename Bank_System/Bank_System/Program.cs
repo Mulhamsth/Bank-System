@@ -4,13 +4,13 @@
     {
         static void Main(string[] args)
         {
-            AccountsTable At = new AccountsTable();
+            AccountsDB At = new AccountsDB();
 
 
-            Account a = new Account(1,"Mulham Taylouni", "mulham@gmail.com", "Password!1234");
-            Account a2 = new Account(2, "Morhaf Taylouni", "morhaf@gmail.com", "Password!q53");
-            Account a3 = new Account(3, "Wiesinger Christian", "Wiesinger@gmail.com", "Password!423525");
-            Account a4 = new Account(3, "Glaser Niklas", "Niklas@gmail.com", "Passwords!4124143525");
+            Account a = new Account("Mulham Taylouni", "mulham@gmail.com", "Password!1234");
+            Account a2 = new Account("Morhaf Taylouni", "morhaf@gmail.com", "Password!q53");
+            Account a3 = new Account("Wiesinger Christian", "Wiesinger@gmail.com", "Password!423525");
+            Account a4 = new Account("Glaser Niklas", "Niklas@gmail.com", "Passwords!4124143525");
 
             At.AddAccount(a);
             At.AddAccount(a2);
@@ -32,14 +32,13 @@
 
             Console.WriteLine(At.ShowAccounts());
             Console.WriteLine("-------------------------------------");
-            At.ExtractAccounts("data.txt");
-            Console.WriteLine(At.ShowExtractedAccounts());
-            Console.WriteLine("--------------------unterschied----------------");
-            At.AddAccount(a4);
+            Register.NewAccount(At, "test", "test@gmail.com", "Password!32525");
+            Console.WriteLine("-------------------------------------");
             Console.WriteLine(At.ShowAccounts());
-            Console.WriteLine("-----------------------------------------");
-            At.AddExtractedAccounts();
-            Console.WriteLine(At.ShowAccounts());
+            Console.WriteLine("------------------------");
+            Console.WriteLine(Login.IsValid(At, "test@gmail.com", "Password!32525"));
+
+
         }
     }
 }
